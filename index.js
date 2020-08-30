@@ -12,7 +12,7 @@ mongoose.connect('mongodb+srv://hyesoo:1003@boilerplate.a5yew.mongodb.net/boiler
     useNewUrlParser: true, useUnifiedTopology:true, useCreateIndex:true, useFindAndModify:false
 }).then(() => console.log('MongoDB connected...')).catch(err => console.log(err))
 
-app.get('/',(req,res) => res.send('Hello World!'))
+app.get('/',(req,res) => res.send('hellooooo World!'))
 app.post('/register',(req,res)=>{
     const user = new User(req.body);
     user.save((err,userInfo) => {
