@@ -18,6 +18,12 @@ mongoose.connect(config.mongoURI, {
 }).then(() => console.log('MongoDB connected...')).catch(err => console.log(err))
 
 app.get('/',(req,res) => res.send('hellooooo World!'))
+
+app.get('/api/hello',(req,res) => {
+    res.send("hello~! is this right ??!")
+})
+
+
 app.post('/api/users/register',(req,res)=>{
     const user = new User(req.body);
     user.save((err,userInfo) => {
