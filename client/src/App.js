@@ -28,8 +28,8 @@ function App() {
       */}
       <Switch>
         <Route exact path="/" component={Auth(LandingPage, null)} />
-        <Route exact path="/login" component = {Auth(LoginPage) , false} />
-        <Route exact path="/register" component = {Auth(RegisterPage), false} />
+        <Route exact path="/login" component = {Auth(LoginPage, false)} />
+        <Route exact path="/register" component = {Auth(RegisterPage,false)} />
       </Switch>
     </div>
   </Router>

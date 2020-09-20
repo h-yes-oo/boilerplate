@@ -12,7 +12,7 @@ export default function (state = {}, action) {
         case REGISTER_USER:
             return { ...state, register: action.payload }
             break;
-        case REGISTER_USER:
+        case AUTH_USER:
             return { ...state, userData: action.payload }
             break;
         default:
