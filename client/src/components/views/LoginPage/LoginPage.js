@@ -27,6 +27,7 @@ function LoginPage(props) {
 
         dispatch(loginUser(body))
             .then(response => {
+                console.log(response.payload);
                 if(response.payload.loginSuccess) {
                     // 리액트에서 페이지 이동하는 방식
                     props.history.push('/')
